@@ -21,7 +21,9 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "types": ["@auth0/angular-jwt"]
+    
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
