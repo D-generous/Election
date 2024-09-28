@@ -97,5 +97,9 @@
   },
   "cli": {
     "analytics": "b39ef370-1c08-4c59-bf5a-996dc0cd03cd"
-  }
+  },
+  "externals": {
+  "@auth0/angular-jwt": "commonjs @auth0/angular-jwt"
+}
+
 }
