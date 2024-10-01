@@ -46,7 +46,7 @@ public message:any=''
     }
 
 
-    this.http.post('https://dgen.com.ng/signin.php',obj,{ withCredentials: true }).subscribe( 
+    this.http.post('https://dgen.com.ng/backend/signup.php',obj,{ withCredentials: true }).subscribe( 
       (response:any) => { 
         this.message = response.message
 
