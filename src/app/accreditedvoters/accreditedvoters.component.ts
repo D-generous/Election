@@ -34,7 +34,7 @@ export class AccreditedvotersComponent {
       let obj = {
         statecode: this.form.value['statecode']
       }
-      this.http.post('http://localhost/Election/accreditedvoter.php',obj).subscribe((data:any)=>{
+      this.http.post('https://dgen.com.ng/backend/accreditedvoter.php',obj).subscribe((data:any)=>{
 
 
         if (data.status===false) {

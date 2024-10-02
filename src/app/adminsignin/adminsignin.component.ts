@@ -42,7 +42,7 @@ export class AdminsigninComponent {
 
 
 
-    this.http.post('https://cors-anywhere.herokuapp.com/http://localhost/Election/adminsignin.php',obj,{ withCredentials: true }).subscribe( 
+    this.http.post('https://dgen.com.ng/backend/adminsignin.php',obj,{ withCredentials: true }).subscribe( 
       (response:any) => { 
         this.message = response.message
 

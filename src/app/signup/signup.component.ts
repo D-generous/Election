@@ -52,7 +52,7 @@ export class SignupComponent {
 
     }
 
-    this.http.post('https://dgen.com.ng/backend/signup.php', obj, { withCredentials: true }).subscribe((data:any)=>{
+    this.http.post('http://localhost/Election/signup.php', obj).subscribe((data:any)=>{
       this.msg = data
 
       if (data.status===true) {

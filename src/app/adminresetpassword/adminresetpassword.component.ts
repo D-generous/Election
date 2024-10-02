@@ -49,7 +49,7 @@ export class AdminresetpasswordComponent {
         
           
       
-          this.http.post('http://localhost/Election/adminresetpassword.php', obj).subscribe((data:any)=>{
+          this.http.post('https://dgen.com.ng/backend/adminresetpassword.php', obj).subscribe((data:any)=>{
             // if (data.state===false) {
             //   this.msg0 = data.message
             //   this.showMessageWithTimeout(this.msg0, 3000)
