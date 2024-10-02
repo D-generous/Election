@@ -44,10 +44,14 @@ export class AdminrequestpasswordComponent {
       if (data.state===false) {
         this.msg0 = data.message
         this.showMessageWithTimeout(this.msg0, 3000)
+        console.log(data);
+        
         
       }else{
         this.msg1 = data.message
         this.showMessageWithTimeout(this.msg1, 5000)
+        console.log(data);
+
 
 
       }
