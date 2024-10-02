@@ -27,7 +27,7 @@ export class ResultComponent {
   public msg:any=''
 
   ngOnInit(){
-    this.http.get('http://localhost/Election/result.php').subscribe((data:any)=>{
+    this.http.get('https://dgen.com.ng/Election/result.php').subscribe((data:any)=>{
      
       
       if (data.status===true) {

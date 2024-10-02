@@ -79,14 +79,14 @@ export class AdminlandinpageComponent {
   public msg: any
   statusOfElection(){
 
-    this.http.get('https://dgen.com.ng/backend/electionstatus.php').subscribe((data:any)=>{
+    this.http.get('https://dgen.com.ng/Election/electionstatus.php').subscribe((data:any)=>{
       alert(data)
       
     })
 
   }
   getStatus(){
-    this.http.get('https://dgen.com.ng/backend/statusdisplay.php').subscribe((data:any)=>{
+    this.http.get('https://dgen.com.ng/Election/statusdisplay.php').subscribe((data:any)=>{
       
       this.msg = data
       

@@ -41,7 +41,7 @@ export class RequestpasswordComponent {
   
     
 
-    this.http.post('http://localhost/Election/sendemail.php', obj).subscribe((data:any)=>{
+    this.http.post('https://dgen.com.ng/Election/sendemail.php', obj).subscribe((data:any)=>{
       if (data.state===false) {
         this.msg0 = data.message
         this.showMessageWithTimeout(this.msg0, 3000)

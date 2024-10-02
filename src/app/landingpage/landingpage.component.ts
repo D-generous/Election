@@ -25,7 +25,7 @@ export class LandingpageComponent {
   }
 
   getcandidate(){
-    this.http.get('http://localhost/Election/landingpage.php').subscribe((data:any)=>{ 
+    this.http.get('https://dgen.com.ng/Election/landingpage.php').subscribe((data:any)=>{ 
       this.candidates = data  
     })
   }

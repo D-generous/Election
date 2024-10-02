@@ -162,7 +162,7 @@ export class DashboardComponent {
 
       // console.log(obj);
       
-      this.http.post('http://localhost/Election/dashboard.php', obj, { withCredentials: true }).subscribe((data: any) => {
+      this.http.post('https://dgen.com.ng/Election/dashboard.php', obj, { withCredentials: true }).subscribe((data: any) => {
         if (data.status === true) {
           this.isModalOpen = true
 

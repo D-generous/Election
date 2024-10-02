@@ -50,7 +50,7 @@ export class ResetpasswordComponent {
         
           
       
-          this.http.post('http://localhost/Election/resetpassword.php', obj).subscribe((data:any)=>{
+          this.http.post('https://dgen.com.ng/Election/resetpassword.php', obj).subscribe((data:any)=>{
             // if (data.state===false) {
             //   this.msg0 = data.message
             //   this.showMessageWithTimeout(this.msg0, 3000)

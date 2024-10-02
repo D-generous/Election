@@ -50,7 +50,7 @@ export class CandidatesinfoComponent {
       formdata.append('name', this.form.value['name'])
       formdata.append('statecode', this.form.value['statecode'])
 
-      this.http.post('http://localhost/Election/candidateupload.php', formdata).subscribe((data:any)=>{
+      this.http.post('https://dgen.com.ng/Election/candidateupload.php', formdata).subscribe((data:any)=>{
         if (data.status === false) {
           this.msg0 = data.message
         this.showMessageWithTimeout(this.msg0, 3000)
