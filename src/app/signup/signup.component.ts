@@ -54,6 +54,8 @@ export class SignupComponent {
 
     this.http.post('http://localhost/Election/signup.php', obj).subscribe((data:any)=>{
       this.msg = data
+      console.log(data);
+      
 
       if (data.status===true) {
         this.routes.navigate(['/signin'])

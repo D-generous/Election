@@ -52,7 +52,7 @@ export class AdminsignupComponent {
     }
 
     
-    this.http.post('https://dgen.com.ng/backend/adminsignup.php', obj).subscribe((data:any)=>{
+    this.http.post('http://localhost/Election/adminsignup.php', obj).subscribe((data:any)=>{
 
       this.msg = data
 
@@ -60,6 +60,8 @@ export class AdminsignupComponent {
         this.routes.navigate(['/adminsignin'])
         
       }
-    })  
+    })
+  
   }
+
 }
