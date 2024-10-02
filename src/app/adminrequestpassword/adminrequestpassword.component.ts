@@ -40,10 +40,8 @@ export class AdminrequestpasswordComponent {
   
     
 
-    this.http.post('https://dgen.com.ng/backend/adminsendemail.php', obj).subscribe((data:any)=>{
+    this.http.post('http://localhost/Election/adminsendemail.php', obj).subscribe((data:any)=>{
       if (data.state===false) {
-        console.log(data);
-        
         this.msg0 = data.message
         this.showMessageWithTimeout(this.msg0, 3000)
         
@@ -51,8 +49,6 @@ export class AdminrequestpasswordComponent {
         this.msg1 = data.message
         this.showMessageWithTimeout(this.msg1, 5000)
 
-        console.log(data);
-        
 
       }
       // console.log(data);
